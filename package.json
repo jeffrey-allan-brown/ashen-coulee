@@ -1,0 +1,23 @@
+{
+  "name": "ashen-coulee",
+  "version": "0.0.1",
+  "description": "ashen coulee is a working repository for developing extensibility plugins for Obsidian",
+  "main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "node version-bump.mjs && git add manifest.json versions.json"
+	},
+  "author": "jeffrey-allan-brown",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.19.5",
+    "obsidian": "^1.4.11",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
